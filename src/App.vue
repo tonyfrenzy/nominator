@@ -1,28 +1,43 @@
-<template>
-  <div id="app">
-    <HeaderDiv/>
-
-    <NominateDiv/>
-
-    <FooterDiv/>
-  </div>
-</template>
-
 <script>
-import HeaderDiv from './components/HeaderDiv.vue'
-import NominateDiv from './components/NominateDiv.vue'
-import FooterDiv from './components/FooterDiv.vue'
+import HeaderDiv from "./components/HeaderDiv.vue";
+import NominateDiv from "./components/NominateDiv.vue";
+import FooterDiv from "./components/FooterDiv.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderDiv,
     NominateDiv,
-    FooterDiv
-  }
-}
+    FooterDiv,
+  },
+};
 </script>
 
-<style>
+<template>
+  <div id="app">
+    <HeaderDiv />
 
-</style>
+    <NominateDiv />
+
+    <FooterDiv />
+  </div>
+</template>
+
+<style></style>
+
+<!-- 
+<script setup lang="ts">
+import HeaderDiv from "./components/HeaderDiv.vue";
+import NominateDiv from "./components/NominateDiv.vue";
+import FooterDiv from "./components/FooterDiv.vue";
+</script>
+
+<template>
+  <HeaderDiv />
+
+  <NominateDiv />
+
+  <FooterDiv />
+</template>
+
+<style></style> -->
