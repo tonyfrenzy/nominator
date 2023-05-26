@@ -2,8 +2,9 @@
   <div>
     <footer class="border-top">
       <div class="container">
-        <div class="py-4 border-bottom">        
-          - <small>UX Developer Intern & Web Developer Intern Challenge - Summer 2021</small>
+        <div class="py-4 border-bottom">
+          -
+          <small>VueJS Challenge - 2023</small>
         </div>
       </div>
 
@@ -11,8 +12,8 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md">
-              The Shoppies
-              <small class="d-block mb-3 text-muted">© 2021</small>
+              Movie Nominator
+              <small class="d-block mb-3 text-muted">© 2023</small>
             </div>
             <div class="col-6 col-md">
               <h5>Movie Industries</h5>
@@ -37,8 +38,6 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
-<style scoped>
-</style>
+<style scoped></style>

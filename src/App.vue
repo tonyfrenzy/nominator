@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import HeaderDiv from "./components/HeaderDiv.vue";
+import NominateDiv from "./components/NominateDiv.vue";
+import FooterDiv from "./components/FooterDiv.vue";
+</script>
+
+<template>
+  <div>
+    <HeaderDiv />
+
+    <NominateDiv />
+
+    <FooterDiv />
+  </div>
+</template>
+
+<style></style>
+
+<!-- 
 <script>
 import HeaderDiv from "./components/HeaderDiv.vue";
 import NominateDiv from "./components/NominateDiv.vue";
@@ -24,20 +43,4 @@ export default {
 </template>
 
 <style></style>
-
-<!-- 
-<script setup lang="ts">
-import HeaderDiv from "./components/HeaderDiv.vue";
-import NominateDiv from "./components/NominateDiv.vue";
-import FooterDiv from "./components/FooterDiv.vue";
-</script>
-
-<template>
-  <HeaderDiv />
-
-  <NominateDiv />
-
-  <FooterDiv />
-</template>
-
-<style></style> -->
+-->

@@ -1,5 +1,5 @@
 <template>
-  <div class="container" style="min-height: 54vh;">
+  <div class="container" style="min-height: 54vh">
     <div class="mb-3">
       <!-- @keyup.enter="searchMovie"  -->
       <input
@@ -31,7 +31,12 @@
                 class="align-self-start mr-3"
                 :src="movie.Poster"
                 alt="movie poster"
-                style="display:block;overflow:hidden;width:150px;height:150px;"
+                style="
+                  display: block;
+                  overflow: hidden;
+                  width: 150px;
+                  height: 150px;
+                "
               />
               <div class="media-body text-left">
                 <h5 class="mt-0">{{ movie.Title }}</h5>
@@ -65,7 +70,10 @@
               role="alert"
               v-if="nominatedMovies.length > 4"
             >
-              <small>Maximum of <strong>5</strong> nominations allowed! Thank you.</small>
+              <small
+                >Maximum of <strong>5</strong> nominations allowed! Thank
+                you.</small
+              >
             </div>
           </div>
 
@@ -74,7 +82,9 @@
             v-for="(movie, index) in nominatedMovies"
             :key="movie.id"
           >
-            <span class="mr-2">{{ movie.title }} ({{ movie.releaseDate }})</span>
+            <span class="mr-2"
+              >{{ movie.title }} ({{ movie.releaseDate }})</span
+            >
             <button
               class="btn btn-danger btn-sm"
               title="remove from lists"
@@ -108,7 +118,8 @@ export default {
   methods: {
     deactivateNominationButton(mv) {
       return (
-        this.nominatedMoviesId.includes(mv.imdbID) || this.nominatedMovies.length == 5
+        this.nominatedMoviesId.includes(mv.imdbID) ||
+        this.nominatedMovies.length == 5
       );
     },
 
